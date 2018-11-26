@@ -128,3 +128,7 @@ function ToggleWrap()
           inoremap <buffer> <silent> <End>  <C-o>g<End>
     endif
 endfunction
+
+" ================ Status line ========================
+
+set statusline=%t[%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l/%L\ %P
